@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | With Cheese</title>
+    <meta name="description" content="The With Cheese menu: Kotae, loaded fries and more. Mouth watering, melting cheese, made for satisfaction.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-doodles" aria-hidden="true">
+        <div class="menu-doodle menu-doodle-a"></div>
+        <div class="menu-doodle menu-doodle-b"></div>
+    </div>
+
+    <header>
+        <nav class="navbar" aria-label="Main">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About Us</a>
+            <a href="index.html" class="nav-logo"><img src="images/cheese_logo.png" alt="With Cheese"></a>
+            <a href="menu.html" aria-current="page">Menu</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="menu-main">
+        <div class="menu-head">
+            <p class="eyebrow menu-tag">EVERYTHING IS BETTER</p>
+            <h1><span class="mh-a">OUR</span> <span class="mh-b">MENU</span></h1>
+            <p class="menu-tagline">Mouth Watering, Melting Cheese. Made for Satisfaction.</p>
+            <div class="menu-chips" id="menu-chips" role="group" aria-label="Filter the menu"></div>
+        </div>
+
+        <!--
+          HOW TO ADD AN ITEM: copy one <li class="menu-card">...</li> block, paste it inside the right
+          category's <ul>, then change the name, price, description and image path.
+          HOW TO ADD A CATEGORY: copy a whole <section class="menu-group">...</section>, change
+          data-cat, the id and the <h2>. The filter buttons appear on their own.
+        -->
+
+        <section class="menu-group" id="kotae" data-cat="Kotae">
+            <h2>Kotae</h2>
+            <ul class="menu-grid">
+                    <li class="menu-card">
+                        <img src="images/Kotea-image1.png" alt="" loading="lazy">
+                        <div class="menu-card-info">
+                            <div class="menu-card-top"><h3>Double Meat</h3><span class="price">R49</span></div>
+                            <p>[Add a short description]</p>
+                        </div>
+                    </li>
+                    <li class="menu-card">
+                        <img class="is-placeholder" src="images/cheese_logo.png" alt="" loading="lazy">
+                        <div class="menu-card-info">
+                            <div class="menu-card-top"><h3>Fire Stack</h3><span class="price">R69</span></div>
+                            <p>[Add a short description]</p>
+                        </div>
+                    </li>
+            </ul>
+        </section>
+
+        <section class="menu-group" id="fries" data-cat="Fries">
+            <h2>Fries</h2>
+            <ul class="menu-grid">
+                    <li class="menu-card">
+                        <img src="images/Chillie-Fries.png" alt="" loading="lazy">
+                        <div class="menu-card-info">
+                            <div class="menu-card-top"><h3>Loaded Fries</h3><span class="price">R39</span></div>
+                            <p>[Add a short description]</p>
+                        </div>
+                    </li>
+            </ul>
+        </section>
+
+        <section class="menu-cta">
+            <div>
+                <h2>Hungry?</h2>
+                <p>Order now and get it hot, loaded and melting.</p>
+            </div>
+            <a class="btn" href="#contact">ORDER NOW</a>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div>
+            <img src="images/cheese_logo.png" class="footer-logo" alt="With Cheese">
+            <p class="copyright">© 2026 With Cheese. All rights reserved.</p>
+        </div>
+        <div class="footer-items">
+            <div>
+                <h3 class="footer-header">Menu</h3>
+                <ul>
+                    <li><a href="menu.html#kotae">Kotae</a></li>
+                    <li><a href="menu.html#fries">Fries</a></li>
+                    <li>******</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer-header">About Us</h3>
+                <ul>
+                    <li><a href="index.html#about">Our Story</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer-header">Contact</h3>
+                <ul>
+                    <li><img src="Icon-pack/icons8-phone-50.apng.png" class="footer-icon" alt="">+27 123 456 7890</li>
+                    <li><img src="Icon-pack/icons8-gmail-logo-50.apng.png" class="footer-icon" alt="">example@email.com</li>
+                    <li><img src="Icon-pack/icons8-location-50.apng.png" class="footer-icon" alt="">Johannesburg, South Africa</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer-header">Follow Us</h3>
+                <div class="social">
+                    <a href="#" aria-label="Instagram"><img src="Icon-pack/icons8-instagram-logo-50.png" class="footer-icon" alt=""></a>
+                    <a href="#" aria-label="TikTok"><img src="Icon-pack/icons8-tiktok-50.apng.png" class="footer-icon" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="menu.js" defer></script>
+</body>
+</html>
